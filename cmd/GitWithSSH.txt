@@ -1,0 +1,17 @@
+ls -al ~/.ssh 
+ssh-keygen -t ed25519 -C "your_email@example.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519_github_work
+cat ~/.ssh/id_ed25519_github_work.pub
+git clone git@github-work:username/repo.git
+ssh -T git@github.com
+
+01. Check already installed ssh account (C:\Users\<Username>\.ssh
+02. Adding Emails
+03. Adding SSH agent
+04. Add the key
+05. Add SSH to Public Key
+06. Add The Key to github account
+07. Clone the repo
+08. Test Connection
+Done
