@@ -1,0 +1,73 @@
+Full Backend Development Roadmap (Go-Focused)
+
+Step 1: Core Go Skills
+Syntax, types, functions, structs, pointers
+Interfaces and embedding
+Error handling (error type)
+Go routines & channels (concurrency)
+Packages & modules (go.mod)
+Testing (testing package, table-driven tests)
+
+Step 2: Go Standard Library
+net/http (HTTP server & client)
+context (request-scoped data)
+encoding/json & encoding/xml
+log & errors
+io, os, bufio for file I/O
+
+Step 3: Web Frameworks
+Fiber, Chi, Gin
+
+Middleware patterns: logging, auth, rate limiting
+Route grouping, dynamic params
+Request validation
+
+Step 4: Databases
+SQL: PostgreSQL, MySQL
+Using database/sql or ORM like GORM
+NoSQL: MongoDB, Redis
+DB patterns: Repository, Unit of Work, Transactions
+SQL injection safety, connection pooling
+
+Step 5: Design Patterns & Architecture
+Singleton, Factory, Builder, Adapter, Decorator, Facade
+Service Layer & Repository
+Dependency Injection
+Middleware & Chain of Responsibility
+Event-driven / Observer patterns
+Concurrency patterns: worker pools, pipelines
+
+Step 6: API Design
+RESTful APIs
+gRPC APIs (for microservices)
+Versioning & error handling
+Input validation & serialization
+
+Step 7: Testing & Quality
+
+Unit testing: testing, testify
+Integration tests: DB, HTTP
+Mocking: gomock or interfaces
+Code coverage & benchmarks (go test -cover, benchmarks)
+
+Step 8: Security
+Authentication: JWT, OAuth2
+HTTPS & TLS
+SQL injection prevention
+CSRF, XSS, CORS
+Rate limiting & brute force protection
+
+Step 9: DevOps / Deployment
+Dockerize Go apps
+CI/CD pipelines
+Monitoring & logging (Prometheus, Grafana)
+Cloud deployment: AWS, GCP, DigitalOcean
+Reverse proxies: Nginx / Caddy
+
+Step 10: Advanced / Scalable Patterns
+Microservices architecture
+Event-driven architecture: Kafka, RabbitMQ
+Caching patterns: Redis, in-memory cache
+Load balancing & concurrency tuning
+----------------------------------------------------------------
+Front End
