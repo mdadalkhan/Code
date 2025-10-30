@@ -6,6 +6,7 @@ cat ~/.ssh/id_ed25519_github_work.pub
 git clone git@github-work:username/repo.git
 ssh -T git@github.com
 
+-------------------------------------------------------------------
 01. Check already installed ssh account (C:\Users\<Username>\.ssh
 02. Adding Emails
 03. Adding SSH agent
