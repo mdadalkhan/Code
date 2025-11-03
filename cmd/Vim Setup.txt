@@ -1,0 +1,5 @@
+01. Install neovim
+02. Install nodejs, gcc
+03. Clone the repository
+04. Run
+git clone https://github.com/LazyVim/starter $env:LOCALAPPDATA\nvim
