@@ -1,0 +1,6 @@
+Larvel 12
+php ^8.2
+inertiajs
+ziggyjs
+svelte
+vite

@@ -1,0 +1,8 @@
+v1.0
+03. Admin: GET /admin/dashboard  | AdminDashboard | PreserveState = true
+            3.1 Render Dashboard
+            3.2 Loading templates based on condition.
+            3.3 Attack logut and profile information in the main layout
+            3.4 Dispatch()
+
+-----------------------------------------------------------------------------------------

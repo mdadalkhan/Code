@@ -1,0 +1,7 @@
+@author <mdadalkhan#gmail.com>
+
+-------------------------------------------------------------------------------------------- 
+   Guards:  web       
+   Models: admin
+Providers: admins (name, email,  email_verified_at, passowrd, rememberToken(), timestamp())
+---------------------------------------------------------------------------------------------

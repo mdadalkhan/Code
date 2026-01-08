@@ -1,0 +1,21 @@
+01. Admin: GET /admin/login => AdminLogin  
+                 1.1 Get User Agent Info
+                 1.2 Get IP Address
+                 1.3 Save to IP and Agent Info to Guest DB
+                 1.4 Check Unusual activity
+                 1.5 View Login Page
+                     
+
+02. Admin: POST /admin/login SubmitAdminLogin
+                 1.1 Client Side Validation.
+                 1.2 Submit
+                 1.3 Server Side Validatio:
+                     IF   (Validated) >> Redirect Dashboard: /user/dashboard
+                     ELSE Goto 1.1 Login Page with Errors 
+
+
+
+               
+                 
+                
+  
