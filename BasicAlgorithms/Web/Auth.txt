@@ -1,0 +1,30 @@
+Author <mdadalkhan@gmail.com>
+08/01/2026 
+
+Authentication System (Web):
+
+01. GET / Show initial login page with csrf code. server should generate csrf and save it for further use
+02. User fillup form
+03. onSubmit => POST / check
+         1. IF   (email && password) != db return back()->WithError() => 'Invalid credentials' && redirect /
+            ELSE 
+                1.1 IF (email == varified) 
+                      - Generate Cookie
+                      - Response redirect to Dashboard with Cookies in the header: GET /
+                    ELSE 
+                       Show Email Verification form: GET /emailVerify
+                       - Message: Please verify your email:
+                       - onSend: POST /emailVerify
+                           + Generate Code: Call responsible program recursively
+                           + Send it
+                           + Save to DB
+                           + Code Submission form with You can resend it after xx s
+                       - onCodeSubmit
+                           if (submitted Code == Saved code in DB)  
+                              return redirect /dashboard
+                           else 
+                              
+                     
+                          
+                     
+
