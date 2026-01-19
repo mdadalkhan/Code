@@ -22,13 +22,20 @@
 
 
 
-/**
+/*---------------------------------------------------------------------------------------------------------------------------------------------------------------------*
  * Database
  * 01. php artisan make:migration -m -f -s (if seeding and factory is required) >> Edit Models >> php artisan migrate
  * 02. seeding if any: Include all seeder in databaseSeeder.php which need to be seeded
  * 03. Now run php artisan db:seed now it shall automatically run seeder defined in DatabaseSeeder.php
- * 
- * */
+
+ * Relationships
+   - One  to One
+   - One  to Many
+   - Many to Many  
+ *--------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+
+
 
 
  // ########################## Flow ###############################
