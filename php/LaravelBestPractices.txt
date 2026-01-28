@@ -1,0 +1,50 @@
+আইটেম,স্টাইল,উদাহরণ
+Controller,PascalCase,ProductController.php
+Model,PascalCase (Singular),Product.php
+Migration,snake_case,2024_01_01_create_products_table.php
+Table Name,snake_case (Plural),"products, order_items"
+Variable,camelCase,"$userData, $isVerified"
+Method,camelCase,"getData(), storeInvoice()"
+Route Name,snake_case / dot,"products.index, user_settings"
+View File,snake_case,show_profile.blade.php
+
+২. কন্ট্রোলার (Controller Rules)
+Thin Controllers: কন্ট্রোলারে শুধু রিকোয়েস্ট হ্যান্ডলিং থাকবে। বিজনেস লজিক থাকবে Model অথবা Service Class-এ।
+
+Resource Methods: ডিফল্ট মেথড নাম ব্যবহার করুন: index, create, store, show, edit, update, destroy।
+
+Validation: বড় প্রজেক্টের ক্ষেত্রে php artisan make:request ব্যবহার করে আলাদা ভ্যালিডেশন ফাইল তৈরি করুন।
+
+৩. মডেল এবং ডেটাবেজ (Models & DB)
+Mass Assignment: সবসময় protected $fillable = []; ব্যবহার করুন।
+
+Relationships: রিলেশন মেথড সবসময় camelCase হবে। যেমন: public function orderItems().
+
+Avoid Raw SQL: সবসময় Eloquent ORM অথবা Query Builder ব্যবহার করুন।
+
+
+৪. ভিউ বা ব্লেড কনভেনশন (View/Blade)
+Directory Structure: মডেলের নাম অনুযায়ী ফোল্ডার করুন।
+
+resources/views/product/index.blade.php
+
+resources/views/product/create.blade.php
+
+Logic-less Views: ভিউ ফাইলে কোনো কন্ডিশনাল ক্যালকুলেশন বা ডেটাবেজ কুয়েরি করবেন না। সব ডেটা কন্ট্রোলার থেকে প্রসেস হয়ে আসবে।
+
+Directives: @php ... @endphp এড়িয়ে চলুন। এর বদলে ব্লেড ডিরেক্টিভ (@if, @foreach) ব্যবহার করুন।
+
+৫. রাউটিং (Routing)
+Route Closures: রাউট ফাইলে সরাসরি ফাংশন (Closure) লিখবেন না। সবসময় কন্ট্রোলার মেথড রেফার করবেন।
+
+Named Routes: সব রাউটে নাম ব্যবহার করুন।
+
+সঠিক: route('users.show', $user)
+
+ভুল: url('/users/'.$user->id)
+
+
+৬. কোড ফরম্যাটিং (PSR-12 Standard)
+ইন্ডেন্টেশনের জন্য ৪টি স্পেস (Spaces) ব্যবহার করুন।
+
+ব্র্যাকেট স্টাইল: মেথড এবং ক্লাসের ওপেনিং ব্র্যাকেট { নতুন লাইনে হবে।

@@ -1,0 +1,2 @@
+Allow PHP CGI through Firewall in app list
+Allow Port
